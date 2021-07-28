@@ -18,9 +18,15 @@ class ViewController: UIViewController, UITextFieldDelegate{
         tfUser.delegate = self
         tfEmail.delegate = self
         tfPass.delegate = self
+        
+        tfUser.attributedPlaceholder = NSAttributedString(string:"Digite seu usuário", attributes:[NSAttributedString.Key.foregroundColor: UIColor.black])
+        tfEmail.attributedPlaceholder = NSAttributedString(string:"Digite seu e-mail", attributes:[NSAttributedString.Key.foregroundColor: UIColor.black])
+        tfPass.attributedPlaceholder = NSAttributedString(string:"Digite sua senha", attributes:[NSAttributedString.Key.foregroundColor: UIColor.black])
+        
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+
         if textField == tfUser {
             tfEmail.becomeFirstResponder()
         } else if textField == tfEmail {
@@ -30,6 +36,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
         }
         return true
     }
-
+    
+    
 }
 
