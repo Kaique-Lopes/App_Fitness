@@ -23,6 +23,10 @@ class ViewController: UIViewController, UITextFieldDelegate{
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == tfUser {
             tfEmail.becomeFirstResponder()
+        } else if textField == tfEmail {
+            tfPass.becomeFirstResponder()
+        } else if textField == tfPass {
+            tfUser.becomeFirstResponder()
         }
         return true
     }
