@@ -78,10 +78,10 @@
             </objects>
             <point key="canvasLocation" x="936.23188405797111" y="88.858695652173921"/>
         </scene>
-        <!--View Controller-->
+        <!--User View Controller-->
         <scene sceneID="3hz-bP-pA4">
             <objects>
-                <viewController id="C4h-AJ-8df" sceneMemberID="viewController">
+                <viewController id="C4h-AJ-8df" customClass="UserViewController" customModule="App_Fitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oFT-Fp-OVw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -94,12 +94,12 @@
             </objects>
             <point key="canvasLocation" x="1702.8985507246377" y="88.858695652173921"/>
         </scene>
-        <!--View Controller-->
+        <!--Tips View Controller-->
         <scene sceneID="chw-MU-yoq">
             <objects>
-                <viewController id="LJE-fd-yAE" sceneMemberID="viewController">
+                <viewController id="LJE-fd-yAE" customClass="TipsViewController" customModule="App_Fitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lhB-Oe-9N6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="W8R-Ot-6cW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -107,15 +107,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AiU-7L-sLc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="796" y="867"/>
+            <point key="canvasLocation" x="2477" y="986"/>
         </scene>
-        <!--View Controller-->
+        <!--Workouts View Controller-->
         <scene sceneID="ke5-L2-VHN">
             <objects>
-                <viewController id="otg-C1-hRI" sceneMemberID="viewController">
+                <viewController id="otg-C1-hRI" customClass="WorkoutsViewController" customModule="App_Fitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="phK-X8-Q9I">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FK5-v0-sz0">
+                                <rect key="frame" x="352" y="686" width="38" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Dicas"/>
+                                <connections>
+                                    <segue destination="LJE-fd-yAE" kind="presentation" id="YLb-hJ-jYE"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Q6a-t2-W51"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>

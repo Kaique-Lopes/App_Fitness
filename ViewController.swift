@@ -44,5 +44,11 @@ class ViewController: UIViewController, UITextFieldDelegate{
         return !textField.text!.isEmpty
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        performSegue(withIdentifier: "segueVC", sender: nil)
+    }
+    
+    
+    
 }
 
