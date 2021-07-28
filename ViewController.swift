@@ -7,12 +7,25 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UITextFieldDelegate{
+    @IBOutlet weak var tfUser: UITextField!
+    @IBOutlet weak var tfEmail: UITextField!
+    @IBOutlet weak var tfPass: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tfUser.delegate = self
+        tfEmail.delegate = self
+        tfPass.delegate = self
     }
-
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == tfUser {
+            tfEmail.becomeFirstResponder()
+        }
+        return true
+    }
 
 }
 
