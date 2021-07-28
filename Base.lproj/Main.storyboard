@@ -16,45 +16,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="0e9-ua-M7S">
-                                <rect key="frame" x="33" y="77" width="348" height="424"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua Senha" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sO0-eS-sgz">
-                                <rect key="frame" x="33" y="600" width="348" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua Senha" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sO0-eS-sgz">
+                                <rect key="frame" x="15" y="642" width="384" height="34"/>
                                 <color key="backgroundColor" systemColor="systemGray3Color"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELC-16-Wxe">
-                                <rect key="frame" x="135" y="656" width="144" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELC-16-Wxe">
+                                <rect key="frame" x="15" y="691" width="384" height="30"/>
                                 <color key="backgroundColor" systemColor="systemGray3Color"/>
                                 <state key="normal" title="Logar">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu E-mail" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JLs-Us-izy">
-                                <rect key="frame" x="33" y="558" width="348" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu E-mail" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JLs-Us-izy">
+                                <rect key="frame" x="15" y="593" width="384" height="34"/>
                                 <color key="backgroundColor" systemColor="systemGray3Color"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu usuário" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hii-Uo-Gbc">
-                                <rect key="frame" x="33" y="516" width="348" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu usuário" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hii-Uo-Gbc">
+                                <rect key="frame" x="15" y="544" width="384" height="34"/>
                                 <color key="backgroundColor" systemColor="systemGray3Color"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="0e9-ua-M7S">
+                                <rect key="frame" x="20" y="29" width="374" height="431"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.94501537079999998" green="0.94515103099999997" blue="0.94498568770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sO0-eS-sgz" firstAttribute="top" secondItem="JLs-Us-izy" secondAttribute="bottom" constant="15" id="3c3-UM-HMF"/>
+                            <constraint firstItem="ELC-16-Wxe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="8gt-Cz-rEi"/>
+                            <constraint firstItem="JLs-Us-izy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="HIy-IL-Lo3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hii-Uo-Gbc" secondAttribute="trailing" constant="15" id="Muj-zH-Grw"/>
+                            <constraint firstItem="JLs-Us-izy" firstAttribute="top" secondItem="hii-Uo-Gbc" secondAttribute="bottom" constant="15" id="RqU-ps-L2s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ELC-16-Wxe" secondAttribute="bottom" constant="15" id="aMU-of-Xou"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ELC-16-Wxe" secondAttribute="trailing" constant="15" id="bTP-yJ-wGi"/>
+                            <constraint firstItem="ELC-16-Wxe" firstAttribute="top" secondItem="sO0-eS-sgz" secondAttribute="bottom" constant="15" id="hXN-IQ-zxp"/>
+                            <constraint firstItem="sO0-eS-sgz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="kq5-4r-e8j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sO0-eS-sgz" secondAttribute="trailing" constant="15" id="nwK-np-22i"/>
+                            <constraint firstItem="hii-Uo-Gbc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="uQo-go-hqj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JLs-Us-izy" secondAttribute="trailing" constant="15" id="vrF-FI-3as"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="tfEmail" destination="JLs-Us-izy" id="L1m-61-SEB"/>

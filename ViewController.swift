@@ -25,8 +25,11 @@ class ViewController: UIViewController, UITextFieldDelegate{
         
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-
         if textField == tfUser {
             tfEmail.becomeFirstResponder()
         } else if textField == tfEmail {
@@ -37,6 +40,9 @@ class ViewController: UIViewController, UITextFieldDelegate{
         return true
     }
     
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        return !textField.text!.isEmpty
+    }
     
 }
 
