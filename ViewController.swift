@@ -11,6 +11,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var tfUser: UITextField!
     @IBOutlet weak var tfEmail: UITextField!
     @IBOutlet weak var tfPass: UITextField!
+    var services: Services!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,11 +19,17 @@ class ViewController: UIViewController, UITextFieldDelegate{
         tfUser.delegate = self
         tfEmail.delegate = self
         tfPass.delegate = self
+        services = Services()
         
         tfUser.attributedPlaceholder = NSAttributedString(string:"Digite seu usuário", attributes:[NSAttributedString.Key.foregroundColor: UIColor.black])
         tfEmail.attributedPlaceholder = NSAttributedString(string:"Digite seu e-mail", attributes:[NSAttributedString.Key.foregroundColor: UIColor.black])
         tfPass.attributedPlaceholder = NSAttributedString(string:"Digite sua senha", attributes:[NSAttributedString.Key.foregroundColor: UIColor.black])
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! UserViewController
+        vc.services = services
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -43,12 +50,6 @@ class ViewController: UIViewController, UITextFieldDelegate{
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
         return !textField.text!.isEmpty
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        performSegue(withIdentifier: "segueVC", sender: nil)
-    }
-    
-    
     
 }
 

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TipsViewController: UIViewController {
+class TipsViewController: ViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
