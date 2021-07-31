@@ -44,6 +44,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
         } else if textField == tfPass {
             tfUser.becomeFirstResponder()
         }
+        services.user = textField.text!
         return true
     }
     

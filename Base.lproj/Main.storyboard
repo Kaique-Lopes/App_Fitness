@@ -98,6 +98,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="iR9-tA-INf"/>
+                    <connections>
+                        <outlet property="lbUser" destination="TvP-ht-4h1" id="4Da-gT-6g6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ev5-tV-tea" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

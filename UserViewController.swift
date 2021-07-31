@@ -8,10 +8,11 @@
 import UIKit
 
 class UserViewController: ViewController {
-
+    @IBOutlet weak var lbUser: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        services = Services()
+        lbUser.text = services.user
     }
 
 }
