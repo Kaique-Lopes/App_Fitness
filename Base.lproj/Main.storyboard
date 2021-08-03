@@ -29,6 +29,9 @@
                                 <state key="normal" title="Logar">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="C4h-AJ-8df" kind="show" id="t6G-6w-VyU"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu E-mail" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JLs-Us-izy">
                                 <rect key="frame" x="15" y="593" width="384" height="34"/>
@@ -71,7 +74,6 @@
                         <outlet property="tfEmail" destination="JLs-Us-izy" id="L1m-61-SEB"/>
                         <outlet property="tfPass" destination="sO0-eS-sgz" id="Qyc-ws-3gC"/>
                         <outlet property="tfUser" destination="hii-Uo-Gbc" id="jV7-9R-Wi0"/>
-                        <segue destination="C4h-AJ-8df" kind="show" identifier="segueVC" id="zmL-G5-sJA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -87,7 +89,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TvP-ht-4h1">
-                                <rect key="frame" x="84" y="44" width="246" height="66"/>
+                                <rect key="frame" x="84" y="303" width="246" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
